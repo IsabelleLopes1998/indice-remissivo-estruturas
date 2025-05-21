@@ -1,0 +1,4 @@
+Data structures are essential in computer science.
+They help us store and organize data efficiently.
+Lists, trees, and hash tables are common structures.
+Understanding them deeply is crucial for solving complex problems.

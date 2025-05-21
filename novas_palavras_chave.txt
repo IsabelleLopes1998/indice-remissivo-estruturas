@@ -1,0 +1,7 @@
+data
+structures
+hash
+problems
+lists
+understanding
+trees
