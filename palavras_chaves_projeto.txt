@@ -9,3 +9,5 @@ to
 árvores
 mãe
 good
+carros
+escada

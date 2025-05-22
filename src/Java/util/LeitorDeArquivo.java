@@ -65,7 +65,6 @@ public class LeitorDeArquivo {
     }
 
     public static List<String> lerPalavrasChave(String caminhoArquivo) {
-        // Mesma lógica do lerLinhas, só que quebra em palavras
         List<String> palavras = new ArrayList<>();
         try (BufferedReader br = new BufferedReader(
                 new InputStreamReader(new FileInputStream(caminhoArquivo), StandardCharsets.UTF_8))) {
@@ -73,7 +72,7 @@ public class LeitorDeArquivo {
             String linha;
             while ((linha = br.readLine()) != null) {
                 for (String palavra : linha.split("\\s+")) {
-                    palavras.add(palavra); // ↓ limpeza e normalização você já faz no Main
+                    palavras.add(palavra);
                 }
             }
 

@@ -1,5 +1,4 @@
 package Java.modelo;
-import Java.modelo.ListaEncadeada;
 
 
 public class Palavra implements Comparable<Palavra> {

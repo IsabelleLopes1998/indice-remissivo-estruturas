@@ -15,10 +15,7 @@ public class TabelaHash {
         }
     }
 
-    /*private int calcularIndice(String texto) {
-        char inicial = Character.toLowerCase(texto.charAt(0));
-        return inicial - 'a'; // 'a' = 0, 'b' = 1, ..., 'z' = 25
-    }*/
+
     private int calcularIndice(String texto) {
         if (texto == null || texto.isEmpty()) return 0;
 
@@ -30,16 +27,10 @@ public class TabelaHash {
 
 
 
-    /*public void inserirPalavra(String texto, int linha) {
-        int indice = calcularIndice(texto);
-        Palavra nova = new Palavra(texto);
-        nova.adicionarOcorrencia(linha);
-        tabela[indice].inserirOuAtualizar(nova);
-    }*/
 
     public void inserirPalavra(String texto, int linha) {
         int indice = calcularIndice(texto);
-        //System.out.println("🔎 Inserindo '" + texto + "' no índice da tabela: " + indice);
+
         Palavra nova = new Palavra(texto);
         nova.adicionarOcorrencia(linha);
         tabela[indice].inserirOuAtualizar(nova);
